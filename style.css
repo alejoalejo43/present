@@ -2,15 +2,11 @@
     width: 500px;
     height: 600px;
     background: #000;
-    
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
-/* .plano{
-    z-index: 2;
-}
-.fondo{
-    z-index: 4;
-} */
-/*Izquierda*/
+
 
 /*Derecha*/
 .derecha{
@@ -252,6 +248,47 @@
     top: 41px;
     left: 237px;
     z-index: 4;
-    -moz-transform: rotate(70deg);
+    -webkit-transform: rotate(70deg);
     transform: rotate(70deg);
 }
+/*************************************************************animaciones*************************************************************/
+
+.star1{
+    color: #fff;
+    font-size: 100px;
+    position: absolute;
+    top: 420px;
+    left: 20px;
+    animation: size, position;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+    z-index: 8;
+    /*rotate(360deg)*/
+}
+@keyframes size{
+    from{font-size: 10px;}
+    to{font-size: 100px;}
+}
+@keyframes position{
+    from{transform: translate(160px,-450px);}
+    to{transform: translate(0px,0px);}
+}
+
+.star2{
+    color: #fff;
+    font-size: 100px;
+    position: absolute;
+    top: 420px;
+    left: 250px;
+    animation: size, position2;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+    z-index: 8;
+    /*rotate(360deg)*/
+}
+
+@keyframes position2{
+    from{transform: translate(20px,-450px);}
+    to{transform: translate(0px,-0px);}
+}
+
